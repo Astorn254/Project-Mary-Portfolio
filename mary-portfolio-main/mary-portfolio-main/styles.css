@@ -1,0 +1,259 @@
+html, body, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Navbar styling */
+nav{
+    background-color: #FFF5F5;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: #111122;
+}
+
+.logo h1{
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 200;
+    color: #b37272;
+    margin-top: 0;
+}
+
+.nav-items{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+}
+
+.nav-items a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #111122;
+    text-decoration: underline;
+}
+/* Home styling */
+.home{
+    background-image: url("https://img.freepik.com/free-vector/realistic-podium-pink-pastel-background_52683-89703.jpg?t=st=1710928712~exp=1710929312~hmac=018017d06fd1e9fa3eee6225219098509c45a9bf99112a64bd3b6a7e62be042b") ;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1; /* Ensures the overlay is above the background image but below the content */
+    height: 500px;
+    margin-top: 110px
+}
+
+.name-portfolio{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    transform: translate(-50%, -50%);
+    color: #FFF5F5;
+    z-index: 5;
+}
+h1{
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+.about{
+    margin: auto;
+    padding: 20px;
+    background-color: #FFCCCC;
+}
+.about-img{
+    border-radius: 8px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.about-section{
+    display:flex;
+    gap: 40px;
+    margin-top: 20px;
+    
+}
+.about-img-container{
+    width: 100%;
+}
+.about-content{
+    width: 100%;
+}
+.about-content h2{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.about-content p{
+   line-height: 36px;
+}
+
+/* Work Experience */
+
+.work-experience {
+    background-color: #FFF5F5;
+    padding: 20px;
+}
+
+.work-experience-section{
+    display: flex;
+    gap:20px;
+    padding: 0px 20px;
+    margin-top: 20px;
+}
+
+.work-experience-card{
+    border: 1px solid #d3cfcf;
+    padding: 20px;
+    border-radius: 8px;
+    width: 33%;
+    
+}
+
+.work-experience-card h3{
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.work-experience-card p{
+    font-size: 15px;
+    line-height: 28px;
+
+}
+
+/* Project section */
+
+.projects{
+    background-color: #FFE6E6;
+    padding: 20px;
+}
+.projects-container{
+    display: flex;
+    gap: 20px;
+    padding: 0px 20px;
+    margin-top: 20px;
+}
+
+.projects-card{
+    border: 1px solid #d3cfcf;
+    padding: 20px;
+    border-radius: 8px;
+    width: 33%;
+}
+.projects-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Contact-Me */
+.contact-me{
+    background-color: #FFF0F0;
+    padding: 20px;
+}
+.contact-section{
+    display: flex;
+    gap: 20px;
+    padding: 0px 20px;
+    align-items: start;
+}
+.contact-card{
+    width: 50%;
+    margin-top: 40px;
+
+}
+
+.contact-card form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-card input{
+    padding: 10px;
+    border: 1px solid #d3cfcf;
+    border-radius: 8px;
+}
+.contact-card textarea{
+    padding: 10px;
+    border: 1px solid #d3cfcf;
+    border-radius: 8px;
+    resize: vertical;
+}
+.form-control input, textarea{
+    width: 100%;
+}
+.contact-card form{
+    gap:20px
+}
+.contact-details{
+    border: 1px solid #d3cfcf;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    
+}
+.contact-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-details h2{
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.contact-details h3{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: #111122;
+}
+
+/* button */
+
+.btn {
+    background-color: #FFCCCC;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+/* Footer */
+.footer{
+    text-align: center;
+    background-color: #FFCCCC;
+    padding: 20px 0;
+    color: #111122;
+}
+
+.footer h4{
+    font-weight: 400;
+}
+
